@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+/*font-family: 'Merienda One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/*font-family: 'Press Start 2P', cursive;*/
+body { 
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,10,80,1) 51%, rgba(8,10,82,1) 100%, rgba(36,204,238,1) 100%);
+    /* background-color: black; */
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    color: white;
+    justify-content:center;
+    margin: auto;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.logo { 
+    height: 50px;
+    width: 50px;
+}
+.music {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 30px;
+}
+main{
+    max-width: 400px;
+    margin: auto auto;
+    
+}
+.container1 {
+    margin: 20px auto;
+    max-width: 500px;
+    grid-area: right;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+input {
+    width: 60%;
+    text-align: center;
+}
+button {
+    border-radius: 15px;
+    width: 20%;
+    margin: 1%;
+    font-weight: bolder;
+    border: solid red;
+}
+.gameContainer {    
+    background-color: blue;
+    max-width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1px;
+    margin: 5px auto;
+    padding: 5px;  
+    border: solid blue;
+    text-align: center;
+ 
+}
+.index {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    color: blue;
+    border: solid blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: xx-large;
+    padding: 0;
+
+}
+.hoverOver {
+    background-color: maroon;
+    opacity: 0.5;
+    color: white;
+    border: solid white;
+}
+.x {
+    font-size: 100%; 
+    color:blue;
+    padding: 0;
+    margin: 0;
+    border: solid red;
+}
+.o {
+    font-size: 100%; 
+    color:white;
+    padding: 0;
+    margin: 0;
+    border: solid red;
+}
+.scoreboard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.currentPlayer{
+    color: blue;
+}
+.audiobg{
+    background-color: red;
+}
+#win1, #win2{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    border: solid white;  
+}
+.winner{
+    height:20%;
+
+}
+
+@media screen and (max-width: 700px){
+    
+    .container1{
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 80%;
+    }
+    .gameContainer{
+        width:200px;
+        height: 200px;
+    }
+    .logo { 
+        height: 30px;
+        width: 30px;
+        margin: 0 0 0 5px;
+    }
+    .music {
+        height: 40px;
+        width: 40px;
+        background-color: blue;
+        border-radius: 30px;
+        margin: 0 5px 0 0;
+    }
+    input {
+        width: 60%;
+        text-align: center;
+        font-size: 80%;
+    }
+    h2 {
+        font-size: 100%;
+        margin: 0 auto;
+    }
+    .scoreboard{
+        font-size: 70%;
+        margin: 0 10px 0 10px;
+        justify-content: space-evenly;
+    }
+    .currentPlayer{
+        color: blue;
+    }
+    .audiobg{
+        background-color: red;
+    }
+    #win1, #win2{
+
+        justify-items: center;
+        align-items: center;
+        z-index:5;    
+    }      
+
+}

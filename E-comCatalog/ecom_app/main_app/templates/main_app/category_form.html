@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if object %}
+    <h3>Edit - {{ object.name }}</h3>
+{% else %}
+    <h3>Add Category</h3>
+{% endif %}
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    {% if object %}
+    <br><br>
+    <input type="submit" value="Update" class="btn waves-effect waves-light blue-grey darken-4">
+{% else %}
+<br><br>
+    <input type="submit" value="Add" class="btn waves-effect waves-light blue-grey darken-4">
+{% endif %}
+</form>
+
+
+{% endblock %}

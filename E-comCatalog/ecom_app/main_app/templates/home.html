@@ -1,0 +1,84 @@
+{% extends 'base.html'%}
+{% block title %}Home{% endblock %}
+    {% block content %}
+    <div class="intro iris flow-text">
+      <br>
+          <div >
+          
+        <h3  >TRY OUT THESE LEATHER PRODUCTS</h3>
+        <div>
+          <h4>
+            Up to</br>
+            <span class="dis">30% 
+              Discount</span></br>
+            on This <br />
+            SEI02 Year 2023
+          </h4>
+          <p>From 1st Jan to 4th Feb</p>
+          <br>
+          <a href="{% url 'product' %}" class="btn blue-grey darken-4"><i class="material-icons right">add_shopping_cart</i>SHOP NOW</a>
+
+        </div>
+             
+             <br>
+            </div>
+        
+           <br>
+    </div>
+         
+   
+     <!--Benefits  -->
+     <section class="section benefits">
+       <div class="benefit-center box">
+         <div class="benefit">
+           <span class="icon"><i class="bx bx-purchase-tag"></i></span>
+           <h4>Free Shipping</h4>
+           <span class="text">Save per order</span>
+           <div class="column" id="box1">
+            <img src="/static/product-images/1.png" style="width:25%">
+            <img src="/static/product-images/2.png" style="width:25%">
+            <img src="/static/product-images/3.png" style="width:50%">
+         </div>
+        </div>
+   
+<br>        <div class=" light-blue lighten-4">
+  <div class="benefit light-blue lighten-4">
+    <span class="icon"><i class="bx bx-book-reader"></i></span>
+    <h4>10-Day Returns</h4>
+    <span class="text">Shop without any fear</span>
+  </div>
+  <div class="row" id="box2">
+   <img src="/static/product-images/6.png" style="width:25%">
+   <img src="/static/product-images/7.png" style="width:25%">
+   <img src="/static/product-images/8.png" style="width:50%">
+  </div>
+  <div class="benefit">
+    <span class="icon"><i class="bx bx-headphone"></i></span>
+    <h4>24/7 Support</h4>
+    <span class="text">We are always there to help you</span>
+  </div>
+</div>
+         
+       </div>
+     </section>
+        </style>
+        </head>
+        <body>
+    <br>    
+        <div class="row">
+          <div class="column" id="box3">
+            <img src="/static/product-images/4.png" style="width:25%">
+            <img src="/static/product-images/5.png" style="width:25%">
+            <img src="/static/product-images/6.png" style="width:50%">
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span class="icon"><i class="bx"></i></span>
+          <h4>We got what you need.</h4>
+          <span class="text">If you can't find what you are looking for just leave us a feedback.</span>
+        </div>
+
+      </body>
+
+{% endblock %}

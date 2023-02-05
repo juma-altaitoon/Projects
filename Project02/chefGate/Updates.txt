@@ -1,0 +1,122 @@
+Version 1.0
+Jasim Dhaif
+- added controller files
+- added routes files
+- added models files
+- added views files
+- added logo in /public/images
+- coded models - need to edit later not done still
+- deleted juma.htlm file
+- deleted the empty "txt.txt" files
+
+Version 1.1
+Jasim Dhaif
+- connected server with routes and controllers files
+
+
+
+Version 1.2
+Juma
+- Updated controllers/index - render home/index page to test nav links.
+- created & coded helper/config.js file.
+
+Version 1.3
+- changed the controllers to render
+- added basic layouts
+
+Version 1.2
+- Updated controllers/index - render home/index page to test nav links.
+- created & coded helper/config.js file.
+
+Version 1.4
+Maitham
+- added the stylesheet link at the layout.ejs.
+- added buttons using the bootstarp website to the alert.
+- created CSS folder and added style.css file with header.
+- installed dotenv, method, passport and passport local.
+- added drop gatagory down menu in recipe.ejs 
+
+Version 1.5
+Maitham
+- Recipe page is not working.
+- Added images onto every page excluding the recipe page.
+
+Version 1.6
+Juma
+"Update - auth.js in controllers & routes, server.js and updated login.ejs and signup ejs. I also added verify password method to models/User.
+- Sign up is not working: not saving into daatabase. 
+
+Version 1.7
+Jasim Dhaif
+- modified/connected Chef and Recipe models to use MMR saving method
+- fixed recipe page error
+- fixed about us page error
+- modified layouts.ejs to connect with public
+- (removed conflicts between my codes and Juma as we worked both on same things).
+
+
+Version 1.8
+Jasim Dhaif
+- connected chef ejs layouts with router and controller
+- connected recipe ejs layouts with router and controller
+- modified layouts
+- modified server.js
+- modified mongoDBURL link
+
+Version 1.9
+Jasim Dhaif
+- removed unnecessary codes and comments.
+- fixed errors in auth controllers
+- modified and fixed errors in chefs controllers
+- modified layouts (navbar need to bed fixed)----
+- fixed errors in auth routes
+- fixed errors in chefs routes
+- application now is able to connect to the server
+
+Version 2.0
+Maitham Alaraibi
+- Added bootstrap latest.
+- Added header to include the sign up + sign in. Need help to change the header color as well as the main background.
+- Added and arranged pictures on home, contactu us, recipe and blog.
+- Added search feature to the layout page and added the team intials on the footer.
+- Added font from google.
+- Fixed the recipe extra "S" letter on server.js.
+- Disabled some of the codes that were used pre the change.
+
+Version 2.1 -
+Juma Altaitoon
+- Updated model/User to include userRole and profilePicture
+- Updated login and signup pages and connect login and signup buttons to their pages.
+- Still working on registering users on database to test login and logout functions
+- I'll check if the userRole will work or not.
+
+Version 2.2
+Maitham Alaraibi
+- Add page is working.
+- Added the POST onto routes.
+- Fixed the Author issue in the Recipe/Add in addition replaced the '#' with 'add'.
+- Aligned and chnaged the appearance of Add recipe in addition included ingrediants and cooking time.
+
+
+Version 2.2.1 -
+Juma Altaitoon
+- Login and Sign up work. created and connected Logout button.
+- updated some chef routes and ejs pages.
+- working on userRoles so we can have one login for Chef and Users.
+
+Version 2.2.2
+Maitham Alaraibi
+- Used bootstrap to change the header and nav features.
+- Added four recipes using card and made some actual writing.
+- changed the login looks. However, the position is still to the left instead of Center.
+
+Version 2.2.3
+Maitham Alaraibi
+- Worked on style.css for sign-in and sign-up.
+- Improved text-style on home page, sign-in, sign-up, recipes, and blog.
+
+Version 2.3 
+Juma Altaitoon
+- Created a User Dashboard on login
+- Modified Personalised pages for recipes chefs and users.
+

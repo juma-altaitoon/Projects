@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+
+
+<div class="card">
+    <br>
+<br>
+    <div style="display:flex; justify-content:center;
+  ">
+ {% load static %}
+    <img width="100px" height="100px" style="border-radius: 50%; margin-right: 20px;" src={% static category.cat_image|cut:'main_app/static/' %} />
+    <h3> <span class="blue-grey-text text-darken-4">{{ category.type }}</span>'s Products</h3>
+
+    <div style=" display:flex; justify-content:center; flex-direction: row; margin-left: 100px; align-items: center;">
+        {% if user.is_superuser %}
+        <a style="margin-right: 50px;" class="light-blue-text text-darken-2" href="{% url 'category_update' category.id %}"><i class="material-icons left">create</i>Edit  </a>
+        
+        <a class=" deep-orange-text text-darken-4" href="{% url 'category_delete' category.id %}"><i class="material-icons left">close</i>Delete </a>
+        {% endif %} 
+    </div>
+    
+    </div>
+
+    <br>
+    <br>
+
+        
+
+    <br>
+    <br>
+</div>
+<div class="row">
+{% for product in object.product_set.all %}
+    {% if user.id == product.user.id %}
+<a href="{% url 'product_details' product.id %}">
+
+    <div class="col s6 m3 ">
+        <div class="card ">
+            <div class="card-image">
+                {% load static %}
+                <img width="100px" height="100px" src={% static product.image|cut:'main_app/static/' %} />
+            </div>
+            <div class="mycard card-content">
+                <span class="card-title ">{{ product.name }}</span>
+                <p>Price: BHD {{ product.price }}</p> 
+                  
+            </div>
+        </div>
+           
+    </div>
+</a>
+    {% endif %}
+{% endfor %}
+</div>
+
+
+
+{% endblock %}

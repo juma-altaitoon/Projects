@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<br>
+{% if object %}
+    <h3>Edit - {{ object.name }}</h3>
+{% else %}
+    <h3>Add Product</h3>
+{% endif %}
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    {% if object %}
+<br>
+<br>
+    <input type="submit" value="Update" class="btn blue-grey darken-4">
+{% else %}
+<br><br>
+    <input type="submit" value="Add" class="btn blue-grey darken-4">
+{% endif %}
+</form>
+
+
+<script>
+    let category_select = document.getElementById('id_category')
+    M.FormSelect.init(category_select)
+    
+    let user_select = document.getElementById('id_user')
+    M.FormSelect.init(user_select)
+</script>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3> Products</h3>
+
+<div class="row">
+{% for product in product_list %}
+    <a href="{% url 'product_details' product.id %}">
+
+        <div class="col s6 m3 ">
+            <div class="card ">
+                <div class="card-image">
+                    {% load static %}
+                    <img width="100px" height="100px" src={% static product.image|cut:'main_app/static/' %} />
+                </div>
+                <div class="mycard card-content">
+                    <span class="card-title ">{{ product.name }}</span>
+                    <p>Price: BHD {{ product.price }}</p>   
+                </div>
+            </div>
+               
+        </div>
+    </a>
+         
+        
+{% endfor %}
+</div>
+<br>
+
+<div class="benefit">
+    <span class="icon"><i class="bx bx-purchase-tag"></i></span>
+    <h4>Free Shipping</h4>
+    <span class="text">Save per order</span>
+    <div class="column" id="box1">
+     <img src="/static/product-images/1.png" style="width:25%">
+     <img src="/static/product-images/2.png" style="width:25%">
+     <img src="/static/product-images/3.png" style="width:50%">
+  </div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+<!-- make a condition like isLogin to prevent interference -->
+
+<h1> Add Recipe </h1>
+
+<form method="POST" action="/recipe/add">
+
+    <div class="form-group">
+        <label>What's on the menu?</label>
+        <input type="text" name="mealName" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Add ingrediants</label>
+        <input type="text" name="mealIngrediants" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>About the recipe</label>
+        <input type="text" name="mealDescription" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label>Preperation Time</label>
+        <input type="text" name="prepareTime" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Category</label>
+        <select name="category" id="category" class="form-control">
+            <option value="">Select Category</option>
+            <option value="Bahraini">Bahraini</option>
+            <option value="American">American</option>
+            <option value="Italian">Italian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Greek">Greek</option>
+        </select>        
+    </div>
+
+    <div class="form-group">
+        <label>Author</label>
+        <input type="hidden" name="chef" class="form-control" value="<%= currentUser._id %>" />   
+    </div>
+    <br>
+    <button type="submit" class="btn btn-dark">Create Recipe</button>
+
+</form>

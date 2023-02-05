@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/reshot-icon-tic-tac-toe-P4XKT2RWUV.svg" alt="tic-tac-toe icon">
+        <h1>Tic Tac Toe</h1>
+        <img class="music" src="images/reshot-icon-music-SLUT2MGAQN.svg" alt="Music-icon">
+    </header>
+    <main>
+        <div class="container1">
+            <div class="player one">
+                <h3>Player 1</h3>
+                <input type="text" id="player1" value="Player 1 ">
+            </div>
+            <button class="start">Start</button>
+            <!-- <div class="round">
+                <label for="rounds"><h3>Number of Rounds</h3></label>
+                <select name="Number_of_Rounds" id="rounds">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+            </div> -->
+            <div class="player two">
+                <h3>Player 2</h3>
+                <input type="text" id="player2" value="Player 2 ">
+            </div>
+        </div> 
+        <div class="scoreboard">
+            <div class = "result one">
+                <h3>Player 1</h3>
+                <h4>Score</h4>
+            </div>
+            <!-- <div class = "result draw">
+                <h3>DRAWS</h3>
+                <h4>Score</h4>
+            </div> -->
+            <div class = "result two">
+                <h3>Player 2</h3>
+                <h4>Score</h4>
+            </div>
+        </div>
+        <div class="winner"></div>
+        <div class="gameContainer">
+            <div class="index" id="one"></div>
+            <div class="index" id="two"></div>
+            <div class="index" id="three"></div>
+            <div class="index" id="four"></div>
+            <div class="index" id="five"></div>
+            <div class="index" id="six"></div>
+            <div class="index" id="seven"></div>
+            <div class="index" id="eight"></div>
+            <div class="index" id="nine"></div>
+        </div>
+        <button class="ai">AI</button>
+       <!-- <h2>The Score</h2>
+       -->
+       
+        
+    </main>
+<!--
+    <audio src="sounds/mixkit-space-game-668.mp3"  id="bgAudio" loop="loop" autoplay="autoplay"></audio>
+-->   <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script src="js/JQuery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

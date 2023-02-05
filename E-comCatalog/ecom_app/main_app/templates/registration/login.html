@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+    <h1>Login</h1>
+    <hr/> <br>
+    
+    <div class="row">
+      <div class="col s6 m10" style="margin-left: 70px;">
+        <div class="card">
+          <br>
+          <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Login" class="btn blue-grey darken-4">
+        </form>
+    <br>
+        <span> Don't have any account? Create one <a href="{% url 'register' %}">here</a>. </span><br>
+    <br>
+      </div>
+      
+      </div>
+    </div>
+    
+{% endblock %}
+
+{% comment %} {% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="ftco-section contact-section bg-light">
+      <div class="container">
+        <div class="row block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form class="bg-white p-5 contact-form" action="{% url 'login' %}" method="post">
+              {% csrf_token %}
+              {% block user_form %}
+              
+              <div class="form-group">
+                {{ form.username }}
+              </div>
+              <div class="form-group">
+                {{ form.password }}
+              </div>
+              <div class="form-group">
+                Don't have any account? Create one <a href="{% url 'login' %}">here</a>.
+                <input type="submit" value="Log In" class="btn">
+              </div>
+
+              {% endblock %}
+            </form>
+          </div>
+          <div class="col-md-6 d-flex">
+          	<div id="map" class="bg-white"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %} {% endcomment %}

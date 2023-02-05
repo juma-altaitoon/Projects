@@ -1,0 +1,349 @@
+body {
+    padding: 30px;
+    text-align: center;
+    background: rgb(42, 42, 51);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Fredericka the Great', cursive;
+}
+#box2{
+    font-size: larger;
+    color: blueviolet;
+    text-align: center;
+}
+
+#homepage{
+    border-radius: 50%;
+    padding: 15px;
+    margin:5px
+}
+/* a {color: let(--bs-dark);}
+/*  */
+/* .pai {
+    color: black;
+    background-color: rgb(99, 193, 123);
+    padding: 40px;
+    font-size: larger;
+} */
+/* .app{
+     width: 50rem;
+    height: 30rem;
+    box-shadow: 0 45px 90px black;
+    margin: 10px 0;
+    display: grid; 
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 50px 50px 1fr;
+} */
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 10;
+    grid-row: 20;
+    align-items:center;
+    color: black;
+}
+
+.search {
+    position: relative;
+}
+
+img {
+  max-width: 50%;
+  max-height: 50%;
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category__link{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 300ms all;
+}
+.category_link:hover {
+    transform: scale(1.1);
+}
+
+.pic-1 {
+    display: flex;
+    overflow: hidden;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 9px rgba(44, 2, 2, 0.5);
+}
+
+
+.pic-1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic-1:hover {
+    transform: scale(1.1);
+}
+
+.pic-1--large {
+    height: 400px;
+}
+
+.form-group {
+    color: rgb(187, 236, 236);
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    justify-content: center;
+    justify-items: center;
+    display:block; 
+}
+
+.tags-list{
+    display: grid;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+    border: 4px white;
+}
+.tag-container{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: brown;
+    font-size: 30px;
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    margin: 0 auto;
+    color: rgb(105, 193, 197);
+}
+#sc-footer {
+    margin: 100px 0 0;
+    /* background: grey; */
+    padding: 50px;
+}
+main{
+    display: flex;
+}
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    /* font-size: 50%; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+#box1{
+border-right: 1px sold grey;
+}
+.box{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+#footer-logo{
+    background: url('/public/images/logo-01.png');
+    margin: 20px 0;
+    bottom: 10px;
+}
+#footernav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    padding: 0 50px 0;
+    margin: 0 auto;
+    font-size: medium;
+}
+ul a {
+    text-decoration: none;
+}
+#pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    
+}
+/* still background is not working*/
+#bk-sign{
+    background: url(../images/foodbk.png);
+    background-size: cover;
+    animation: infinite;
+}
+/* 
+#fsname{
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+}
+#lsname{
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+} */
+
+/* #youtube {
+    display: block;
+    width: 300px;
+} */
+#main-recipe{
+position: relative;
+    grid-gap: 25px;
+    margin-top: 20px;
+    grid-row: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#box-recipe{
+        width: 100%;
+        position: absolute;
+        padding: 15px;
+        background: transparent;
+        padding: 15px;
+        top: auto;
+    }
+    h2{
+        font-size: medium;
+    }
+    .recipe{
+        width: 35%;
+        height: auto;
+        position: relative;
+        background: transparent;
+    }
+    .p{
+        font-size: 25px;
+        text-align: justify;
+    }
+
+#section-latest{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+#recipe {
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;   
+}
+
+#box-recipe1{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;  
+    background-color: black; 
+}
+
+#box-recipe2{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center; 
+    background-color: black; 
+}
+#box-recipe3{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;  
+    background-color: black; 
+}
+#box-recipe4{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;  
+    background-color: black; 
+}
+
+.card-body{
+    background: darkslategrey;
+}
+.card-text{
+    color: chocolate;
+}
+p {
+    color: white;
+}
+#login{
+    border-radius: 50%;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;  
+    background-color: black; 
+}
+
+#password3{
+    border-radius: 50%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    background-color: black; 
+}
+
+#subin {
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;  
+}
+
+.center-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-small{
+    margin-top: 25px;
+}
+
+.button-style{
+    width: 100%;
+}
+
+.col-md-4{
+    display: flex;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center; 
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    background-color: black;  
+}
+/* #signup-center{
+    
+} */
+#navbarHeader{
+    color: aquamarine;
+    text-align: justify;
+}

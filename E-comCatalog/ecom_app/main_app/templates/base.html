@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NNJM E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+
+<header class="navbar-fixed ">
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+            
+          <a href="{% url 'home' %}" class="brand-logo">Logo</a>
+          <div class="topnav">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                
+                <li><form action="{% url 'search_result' %}" method="get"><input style="color:#fafafa ;" type="text" placeholder="Search.." name="search"></form></li>
+                <li><a href="{% url 'home' %}" > &nbsp;&nbsp;Home</a></li>
+                <li><a href="{% url 'about' %}" > &nbsp;&nbsp;About</a></li>
+                <li><a href="{% url 'product' %}" > &nbsp;&nbsp;Products</a></li>
+                <li><a href="{% url 'dashboard' %}" > &nbsp;&nbsp;Dashboard</a></li>
+                <li><a href="{% url 'policy' %}" > &nbsp;&nbsp;Policy</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}" > &nbsp;&nbsp;Profile</a></li>
+                <li><a href="{% url 'checkout' %}" > &nbsp;&nbsp;Cart</a></li>
+                <li><a href="{% url 'order' %}" > &nbsp;&nbsp;Order & Return</a></li>
+                welcome {{ user.username}}
+                <li><a href="{% url 'logout' %}">logout</a></li>
+                {% else %}
+                <li><a href="{% url 'register' %}">Sign Up</a></li>
+                <li><a href="{% url 'login' %}">Log In</a></li>
+                {% endif %}
+            </ul>
+        </div>
+
+    </div>
+</div>
+        
+
+        
+</header>
+    <main class="container center-align grey lighten-5">
+        {% block content %}
+
+
+
+
+        {% endblock %}
+        <br>
+    <br>
+    <br>
+    <br>
+    </main>
+    
+
+    <footer class = "page-footer blue-grey darken-4" >
+        <div class="left">
+            All rights reserved, &copy; 2023 NNJM &nbsp;
+        </div>
+        <section class="section box1">
+            <div class = "benefit-center box">
+                <span class = "benefit">
+                    <span class = "icon">
+</footer>
+</body>
+</html>

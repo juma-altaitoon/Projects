@@ -1,0 +1,44 @@
+<h1> Recipe </h1>
+
+    <div>
+        <label>Title</label><br> 
+        <%= recipe.mealName %>
+    </div>
+    
+    <div>
+        <label>About the recipe</label><br>
+        <%= recipe.mealDescription %> 
+    </div>
+
+    <div>
+        <label>Ingrediants</label><br>
+        <%= recipe.mealIngrediants %>
+    </div>
+    
+    <div>
+        <label>Preperation Time</label><br>
+        <%= recipe.prepareTime %>
+    </div>
+
+    <div>
+        <label>Category</label><br>
+        <%= recipe.category %>      
+    </div>
+
+    <div>
+        <label>Author</label><br>
+        <%= recipe.chef[0].userName %>        
+    </div>
+    <div>
+        <label>Created At</label><br>
+        <%= moment(recipe.createdAt).fromNow() %>
+    </div>
+    
+    <div>
+        <label>Updated At</label><br>   
+        <%= moment(recipe.updatedAt).fromNow() %>
+    </div>
+    <hr>
+    
+    
+   
